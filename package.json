@@ -1,6 +1,6 @@
 {
 	"name": "@vdtn359/react-select",
-	"version": "0.0.0-development",
+	"version": "1.0.0",
 	"description": "Tailwind react select implementation",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
