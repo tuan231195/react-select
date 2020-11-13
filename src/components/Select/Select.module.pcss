@@ -1,0 +1,114 @@
+.root {
+	@apply inline-block relative;
+
+	min-width: 200px;
+
+	*,
+	*::before,
+	*::after {
+		margin: 0;
+		border-width: 0;
+		border-style: solid;
+		line-height: 1.5;
+		border-color: currentColor;
+	}
+	svg {
+		display: block;
+		vertical-align: middle;
+	}
+	button {
+		background-color: transparent;
+		background-image: none;
+		padding: 0;
+		line-height: inherit;
+		color: inherit;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+.contentEditable {
+	@apply break-all p-1 px-2 outline-none text-gray-800;
+
+	&:empty:not(:focus):not(:global(.hide-placeholder)):before {
+		@apply text-gray-500 not-italic;
+		content: attr(placeholder);
+	}
+}
+
+.closeAll {
+	@apply cursor-pointer h-full flex items-center mr-2 justify-center text-black;
+
+	&:focus {
+		@apply outline-none;
+	}
+}
+
+.dropdown {
+	@apply absolute z-10 flex flex-col w-full rounded-b border-solid border border-t-0 border-gray-300 text-sm shadow bg-white w-full max-h-200 overflow-y-auto;
+}
+
+.listOptionWrapper {
+	@apply cursor-pointer w-full;
+
+	&:focus {
+		> * {
+			@apply border-solid border-teal-600;
+		}
+	}
+}
+
+.listOption {
+	@apply p-2 pl-2 items-center flex border-transparent border-solid bg-white border-l-2 relative;
+
+	&:hover {
+		@apply border-teal-600;
+	}
+}
+
+.listOptionSelected {
+	@apply text-gray-600 cursor-not-allowed;
+}
+
+.selectBox {
+	@apply flex flex-auto flex-wrap;
+}
+
+.selectBoxContainer {
+	@apply bg-white p-1 flex border border-solid border-gray-300 items-center;
+}
+
+.singleSelectBox {
+	@apply px-2 w-full;
+}
+
+.arrowButton {
+	@apply outline-none border-none cursor-pointer mr-2 w-4 h-4 flex items-center justify-center text-gray-600;
+}
+
+.loadingIcon {
+	@apply flex items-center justify-center text-gray-600 mr-2;
+}
+
+.listOptionText {
+	@apply mx-2 leading-6;
+}
+
+.multiCloseOptionButton {
+	@apply border-none cursor-pointer ml-1 h-full flex items-center justify-center text-teal-700;
+
+	&:focus {
+		@apply outline-none;
+	}
+}
+
+.multiSelectOptionText {
+	@apply leading-none max-w-full flex-initial;
+}
+
+.multiSelectOption {
+	@apply flex text-xs justify-center items-center m-1 py-1 px-2 bg-white rounded-full text-teal-700 bg-teal-100 border border-teal-300 border-solid;
+}
