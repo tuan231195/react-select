@@ -11,7 +11,7 @@
 		"url": "git@github.com:tuan231195/react-select.git"
 	},
 	"scripts": {
-		"build:storybook": "build-storybook -o .storybook/dist",
+		"build:storybook": "rm -rf .storybook/dist && build-storybook --no-dll -o .storybook/dist",
 		"deploy": "gh-pages -d .storybook/dist",
 		"semantic-release": "semantic-release",
 		"storybook": "start-storybook -p 5000",

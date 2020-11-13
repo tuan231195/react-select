@@ -5,3 +5,9 @@
 ## Storybook
 
 https://tuan231195.github.io/react-select/
+
+## Installation
+
+```bash
+npm i @vdtn359/react-select
+```
