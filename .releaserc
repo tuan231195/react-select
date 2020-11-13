@@ -16,5 +16,6 @@
 			"message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
 		}
 	],
-	"repositoryUrl": "git@github.com:tuan231195/react-tailwind-select.git"
+	"branches": ["master", "main"],
+	"repositoryUrl": "git@github.com:tuan231195/react-select.git"
 }
